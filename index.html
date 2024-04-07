@@ -52,11 +52,77 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="open-menu-btn">
+        <button type="button" class="open-menu-btn" data-menu-open>
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-header-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu" data-menu>
+        <div class="mob-container">
+          <div>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="nav-container">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link header-link-studio" href="./index.html">Studio</a>
+              </li>
+               <li class="mob-menu-item">
+                <a class="mob-menu-link" href>Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href>Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li class="mob-address-item">
+                <a class="mob-address-link mob-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-container">
+            <li class="mob-icon">
+              <a class="mob-icon-link" href target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon">
+              <a class="mob-icon-link" href target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon">
+              <a class="mob-icon-link" href target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon">
+              <a class="mob-icon-link" href target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -628,7 +694,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-icon-close" width="8" height="8">
@@ -704,15 +770,19 @@
                 <svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a href="" class="check-link">Privacy Policy</a></label
-            >
+              >
+              <span>
+                I accept the terms and conditions of the
+                <a href="" class="check-link">Privacy Policy</a></label
+              >
+              </span>
           </div>
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
